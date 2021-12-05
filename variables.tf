@@ -10,12 +10,10 @@ variable "demo_name" {
 variable "management_subscription_id" {
   type        = string
   description = "Subscription ID for the management subscription."
-  default     = null
 }
 variable "connectivity_subscription_id" {
   type        = string
   description = "Subscription ID for the connectivity subscription."
-  default     = null
 }
 variable "prod_subscription_id" {
   type        = string

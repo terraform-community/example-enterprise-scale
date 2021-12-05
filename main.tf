@@ -13,11 +13,11 @@ module "enterprise_scale" {
   root_name      = var.demo_name
 
   # Management
-  deploy_management_resources = var.management_subscription_id != null ? true : false
-  subscription_id_management  = var.management_subscription_id != null ? var.management_subscription_id : ""
+  deploy_management_resources = true
+  subscription_id_management  = var.management_subscription_id
 
   # Connectivity
-  deploy_connectivity_resources = var.connectivity_subscription_id != null ? true : false
-  subscription_id_connectivity  = var.connectivity_subscription_id != null ? var.connectivity_subscription_id : ""
+  deploy_connectivity_resources = true
+  subscription_id_connectivity  = var.connectivity_subscription_id
 }
 
