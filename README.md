@@ -1,3 +1,3 @@
 # Example: Enterprise Scale
 
-A monorepo for demonstrating using the Enterprise Scale module from Microsoft.
+Demonstration using the Enterprise Scale module from Microsoft.

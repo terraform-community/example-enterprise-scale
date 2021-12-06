@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "remote" {
-    organization = "demo-azuretf"
+    organization = "robstr"
 
     workspaces {
-      name = "core-architecture"
+      name = "enterprise-scale"
     }
   }
 }
