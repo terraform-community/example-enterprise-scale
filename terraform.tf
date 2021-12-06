@@ -10,7 +10,7 @@ terraform {
     organization = "robstr"
 
     workspaces {
-      name = "enterprise-scale"
+      name = "example-enterprise-scale"
     }
   }
 }

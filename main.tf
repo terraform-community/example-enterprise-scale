@@ -21,12 +21,12 @@ module "enterprise_scale" {
   subscription_id_connectivity  = var.connectivity_subscription_id
 
   # Landing Zones
-  custom_landing_zones = {
+  custom_landing_zones = var.prod_subscription_id == null ? {} : {
     "production" = {
 
       display_name               = "${format("%s Production", var.demo_name)}"
       parent_management_group_id = "demo-landing-zones"
-      subscription_ids           = []
+      subscription_ids           = [var.prod_subscription_id]
 
       archetype_config = {
         archetype_id   = "default_empty"
