@@ -29,7 +29,7 @@ module "enterprise_scale" {
       subscription_ids           = []
 
       archetype_config = {
-        archetype_id   = "production"
+        archetype_id   = "default_empty"
         parameters     = {}
         access_control = {}
       }
